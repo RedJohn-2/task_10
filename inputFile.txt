@@ -1,0 +1,7 @@
+HUAWEI MatePad; 32; 3; 9990
+DIGMA CITI Octa 10; 64; 4; 11490
+Lenovo Smart Tab M10 FHD Plus TB-X606F; 32; 4; 14990
+Samsung Tab S7; 128; 5; 57990
+IRBIS TZ897; 16; 3; 5600
+Apple iPad mini 2019; 64; 5; 35990
+Apple iPad Pro 11; 256; 5; 78990

@@ -30,18 +30,18 @@ public class Main {
         return scanner.nextDouble();
     }
 
-    static boolean findModelsWithCorrectMemory(List<TabletPriceList> tabletPriceLists, double minMemory, int i) {
-        return  (tabletPriceLists.get(i).getAmountOfMemory() >= minMemory);
+    static boolean findModelsWithCorrectMemory(TabletPriceList tabletPriceList, double minMemory) {
+        return  (tabletPriceList.getAmountOfMemory() >= minMemory);
     }
 
-    static boolean findModelsWithCorrectRating(List<TabletPriceList> tabletPriceLists, int minRating, int i) {
-        return (tabletPriceLists.get(i).getRatingModel() >= minRating);
+    static boolean findModelsWithCorrectRating(TabletPriceList tabletPriceList, int minRating) {
+        return (tabletPriceList.getRatingModel() >= minRating);
     }
 
     static List<TabletPriceList> createCorrectList(List<TabletPriceList> tabletPriceLists, int minRating, double minMemory) {
         List<TabletPriceList> correctList = new ArrayList<>();
         for (int i = 0; i < tabletPriceLists.size(); i++) {
-            if (findModelsWithCorrectMemory(tabletPriceLists, minMemory, i) && findModelsWithCorrectRating(tabletPriceLists, minRating, i)) {
+            if (findModelsWithCorrectMemory(tabletPriceLists.get(i), minMemory) && findModelsWithCorrectRating(tabletPriceLists.get(i), minRating)) {
                 correctList.add(tabletPriceLists.get(i));
             }
         }
